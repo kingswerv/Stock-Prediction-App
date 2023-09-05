@@ -54,7 +54,7 @@ forecast = model.predict(future) # returns forecasts which is a dataframe
 
 
 st.subheader('Forecast data')
-st.write(forecast.tail())
+st.write(forecast.tail())  # Creates a table of raw data (everything below is from this table)
 
 st.write('Forecast graph')
 figure_1 = plot_plotly(model,forecast) # plots forecast 
